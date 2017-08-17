@@ -1,0 +1,16 @@
+clc;
+clear all;
+clf;
+N = 100;
+t = 1:100;
+X = ones(1, N);
+subplot(2,1,1);
+plot(t, X, 'g');
+xlabel('time');
+ylabel('Amplitude');
+title('Unit step in continuous time');
+subplot(2,1,2);
+stem(t, X,'r');
+xlabel('time');
+ylabel('Amplitude');
+title('Unit step in discrete time');
