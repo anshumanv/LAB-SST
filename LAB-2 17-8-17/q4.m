@@ -1,0 +1,12 @@
+a = input("Please Enter the Range of n : \n");
+n = -a:a;
+u = (n >= 0);
+x = (0.5 .** n) .* u;
+plot(n,x,'b');
+title("Signal x");
+xlabel("n");
+ylabel("x");
+E = sum(x .^ 2);
+disp("Total Energy of the given sequence is : "), disp(E);
+P = E ./ 10;
+disp("Total Power of the given sequence is : "), disp(P);

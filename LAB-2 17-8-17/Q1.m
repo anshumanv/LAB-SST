@@ -1,30 +1,28 @@
-clc;
-clear all;
-clf;
-t = -5:0.000002:5;
-x1 = 6*sin(2 * pi * t);
-x2 = 8*sin(2 * pi * t);
+n=1:5;
+x1=[1,2,3,4,5];
+a=(mod(x1,2)==0);
+b=(mod(x1,2)!=0);
 
-subplot(2,2,1)
-plot(t, x1, 'r');
-xlabel('time');
-ylabel('amplitude');
-title('first');
+subplot(3,1,1);
+plot(n,a,'b');
+title("Even parts of the sequence");
+xlabel("Index");
+ylabel("Value");
 
-subplot(2,2,2)
-plot(t, x2, 'r');
-xlabel('time');
-ylabel('amplitude');
-title('second');
+subplot(3,1,2);
+plot(n,b,'g');
+title("Odd parts of the sequence");
+xlabel("Index");
+ylabel("Value");
 
-subplot(2,2,3)
-plot(t, x1+x2, 'r');
-xlabel('time');
-ylabel('amplitude');
-title('add');
+x2=[complex(1,6),complex(2,5),3,complex(4,3),complex(0,5)];
+a=[];
+b=[];
+a=real(x2);
+b=imag(x2);
 
-subplot(2,2,4)
-plot(t, x1.*x2, 'r');
-xlabel('time');
-ylabel('amplitude');
-title('multiply');
+subplot(3,1,3);
+plot(a,b,'r');
+title("Real and imagenary parts of the sequence");
+xlabel("Real part");
+ylabel("Imagenary part");
