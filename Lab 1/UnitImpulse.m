@@ -1,0 +1,12 @@
+n=-10:10;
+x=(n==0);
+subplot(2,1,1);
+plot(n,x,'r');
+title("Unit impulse function in continuous time");
+xlabel('Time');
+ylabel('Amplitude');
+subplot(2,1,2);
+stem(n,x,'g');
+title("Unit impulse function in discrete time");
+xlabel('Index');
+ylabel('Amplitude');
