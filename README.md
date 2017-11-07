@@ -1,2 +1,2 @@
 # Signals-Octave
-Octave codes for Signal &amp; Systems LAB
+Octave codes for Signal &amp; Systems Course.
