@@ -1,2 +1,3 @@
-# Signals-Octave
-Octave codes for Signal &amp; Systems Course.
+# LAB-SST
+
+Octave codes for Systems &amp; Signals Course(CS204).
